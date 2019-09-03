@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Дмитрий Качалов](https://up.htmlacademy.ru/htmlcss/26/user/674263).
-* Наставник: `Алена Сипрякова`.
+* Наставник: [Алена Сиприкова](https://htmlacademy.ru/profile/asiprikova).
 
 ---
 
