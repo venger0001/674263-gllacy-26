@@ -5,19 +5,48 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="header">
       <nav class="main-navigation">
-        <img src="/img/logo.png" width="100" height="40" alt="Логотоп «GllacyShop»">
+        <img src="/img/logo.svg" width="100" height="40" alt="Логотоп «GllacyShop»">
         <ul class="site-navigation">
           <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="delivery.html"></a>Доставка и оплата</li>
-          <li><a href="about.html"></a>О Компании</li>
+          <select name="catalog" size="5">
+            <option class="current" value="" label="Новинки"></option>
+            <option value="" label="Сливочное"></option>
+            <option value="" label="Щербеты"></option>
+            <option value="" label="Фруктовый лед"></option>
+            <option value="" label="Мелорин"></option>
+          </select>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О Компании</a></li>
         </ul>
       </nav>
       <nav class="user-navigation">
-        <button class="search" type="button"></button>
-        <button class="user-navigation-btn" type="button">Вход</button>
-        <button class="user-navigation-btn" type="button">Пусто</button>
+        <ul class="form-navigation">
+          <li>
+            <a class="popup-search" href="#"></a>
+            <form class="form-search" action="#">
+              <input type="text" placeholder="Крем брюле">
+              <button type="button"></button>
+            </form>
+          </li>
+
+          <li>
+            <a class="popup-entrance" href="#">Вход</a>
+            <form class="form-entrance" action="#">
+              <input type="email" placeholder="email@example.com">
+              <input type="password" placeholder="********">
+              <button class="form-entrance-btn">Войти</button>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </form>
+          </li>
+
+          <li>
+            <a class="basket" href="#"><span class="basket-count">Пусто</span></a>
+          </li>
+
+        </ul>
       </nav>
     </header>
     <main>
@@ -56,41 +85,52 @@
         </ul>
       </section>
       <section class="news">
-        <div class="news-blog">
+        <article class="news-blog">
           <h3>Новое в нашем блоге</h3>
           <a href="#">10 способов сервировки  фруктовых щербетов к столу</a>
           <img src="/img/blog-image.png" alt="Мороженое">
-        </div>
-        <div class="news-subscription">
+        </article>
+        <article class="news-subscription">
           <p class="news-subscription-text">
             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
             вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной
             ерунды. Честно =)
           </p>
-          <input type="email" placeholder="email@example.com">
-          <button class="news-subscription-btn" type="submit">Отправить</button>
-        </div>
+          <form class="news-subscription-form" action="">
+            <input type="email" placeholder="email@example.com">
+            <button class="news-subscription-btn" type="submit">Отправить</button>
+          </form>
+        </article>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="footer-social">'
-        <ul>
-          <li><a class="social-button" href="#">Tвитер</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-        </ul>
-      </div>
-      <div class="footer-menu">
-        <a class="footer-menu-current" href="#">Для поставщиков</a>
-        <a href="#">О производтве</a>
-        <a href="#">Нвши документы</a>
-        <a href="#">Экологические стандарты</a>
-      </div>
+      <ul class="footer-social">
+        <li><a class="social-button" href="#" aria-label="Twitter"></a></li>
+        <li><a class="social-button" href="#" aria-label="instagram"></a></li>
+        <li><a class="social-button" href="#" aria-label="facebook"></a></li>
+        <li><a class="social-button" href="#" aria-label="vkontakte"></a></li>
+      </ul>
+
+      <ul class="footer-menu">
+        <li><a class="footer-menu-current" href="#">Для поставщиков</a></li>
+        <li><a href="#">О производтве</a></li>
+        <li><a href="#">Нвши документы</a></li>
+        <li><a href="#">Экологические стандарты</a></li>
+      </ul>
+
       <div class="footer-logo">
-        <img src="/img/footer-logo.png" alt="html academy">
+        <img src="/img/footer-logo.svg" alt="html academy">
         <span>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &#169; 2019</span>
       </div>
     </footer>
+
+    <form class="popup-communication">
+      <span>Мы обязательно Вам ответим!</span>
+      <a class="close" href="">X</a>
+      <input type="text" placeholder="Имя Фамилия">
+      <input type="email" placeholder="email@example.com">
+      <input type="text" placeholder="В свободной форме">
+      <button type="button">Отправить</button>
+    </form>
   </body>
 </html>
