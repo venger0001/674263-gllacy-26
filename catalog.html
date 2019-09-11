@@ -25,13 +25,63 @@
     </div>
   </header>
   <main>
-    <h1>Сливочное мороженное</h1>
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
       <li><a href="catalog.html">Каталог</a></li>
       <li class="breadcrumbs-current">Сливочное</li>
     </ul>
+    <h1>Сливочное мороженное</h1>
+    <section class="sort">
+      <form class="sort-list">
+        <span>Сортировка:</span>
+        <select name="" size="1">
+          <option value="" label="по популярности"></option>
+        </select>
+      </form>
+      <form class="price">
+        <span>Цена: 100 руб. – 500 руб.</span>
+        <div class="price-sort">
+          <input type="range" type="range" min="100" max="500">
+        </div>
+      </form>
+      <form class="radio">
+        <span>Жирность:</span>
+        <div class="radio-sort">
+          <input type="radio" id="choise1" value="0%">
+          <label for="choise1">0%</label>
 
+          <input type="radio" id="choise2" value="10%">
+          <label for="choise2">10%</label>
+
+          <input type="radio" id="choise3" value="30%">
+          <label for="choise3">до 30%</label>
+
+          <input type="radio" id="choise4" value="30%">
+          <label for="choise4">выше 30%</label>
+        </div>
+      </form>
+      <form class="checkbox">
+        <span>Наполнители:</span>
+        <div class="radio-sort">
+          <input type="checkbox" id="box1" value="шоколадные">
+          <label for="box1">шоколадные</label>
+
+          <input type="checkbox" id="box2" value="сахарные присыпки">
+          <label for="box2">сахарные присыпки</label>
+
+          <input type="checkbox" id="box3" value="фрукты">
+          <label for="box3">фрукты</label>
+
+          <input type="checkbox" id="box4" value="сиропы">
+          <label for="box4">сиропы</label>
+
+          <input type="checkbox" id="box5" value="джемы">
+          <label for="box5">джемы</label>
+        </div>
+
+        <button class="sort" type="button">Применить</button>
+      </form>
+    </section>
     <section class="catalog">
       <article class="catalog-item item-current">
         <div class="item-picture">
