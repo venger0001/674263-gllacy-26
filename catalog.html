@@ -7,7 +7,7 @@
 <body>
   <header class="header">
     <nav class="main-navigation">
-      <img src="/img/logo.svg" width="100" height="40" alt="Логотоп «GllacyShop»">
+      <img alt="Логотоп «GllacyShop»" height="40" src="./img/logo.svg" width="100">
       <ul class="site-navigation">
         <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
         <li><a href="#">Доставка и оплата</a></li>
@@ -33,59 +33,62 @@
     <h1>Сливочное мороженное</h1>
     <section class="sort">
       <form class="sort-list">
-        <span>Сортировка:</span>
-        <select name="" size="1">
-          <option value="" label="по популярности"></option>
-        </select>
-      </form>
-      <form class="price">
-        <span>Цена: 100 руб. – 500 руб.</span>
-        <div class="price-sort">
-          <input type="range" type="range" min="100" max="500">
-        </div>
-      </form>
-      <form class="radio">
-        <span>Жирность:</span>
-        <div class="radio-sort">
-          <input type="radio" id="choise1" value="0%">
-          <label for="choise1">0%</label>
+        <fieldset>
+          <legend>Сортировка:</legend>
+          <select name="" size="1">
+            <option label="по популярности" value=""></option>
+          </select>
+        </fieldset>
+        <fieldset class="price">
+          <legend>Цена: 100 руб. – 500 руб.</legend>
+          <div class="price-sort">
+            <input id="range-1a" max="500" min="100" type="range">
+            <input id="range-1b" max="500" min="100" type="range">
+          </div>
+        </fieldset>
+        <fieldset class="radio">
+          <legend>Жирность:</legend>
+          <div class="radio-sort">
+            <input id="choise1" type="radio" value="0%">
+            <label for="choise1">0%</label>
 
-          <input type="radio" id="choise2" value="10%">
-          <label for="choise2">10%</label>
+            <input id="choise2" type="radio" value="10%">
+            <label for="choise2">10%</label>
 
-          <input type="radio" id="choise3" value="30%">
-          <label for="choise3">до 30%</label>
+            <input id="choise3" type="radio" value="30%">
+            <label for="choise3">до 30%</label>
 
-          <input type="radio" id="choise4" value="30%">
-          <label for="choise4">выше 30%</label>
-        </div>
-      </form>
-      <form class="checkbox">
-        <span>Наполнители:</span>
-        <div class="radio-sort">
-          <input type="checkbox" id="box1" value="шоколадные">
-          <label for="box1">шоколадные</label>
+            <input id="choise4" type="radio" value="30%">
+            <label for="choise4">выше 30%</label>
+          </div>
+        </fieldset>
+        <fieldset class="checkbox">
+          <legend>Наполнители:</legend>
+          <div class="radio-sort">
+            <input id="box1" type="checkbox" value="шоколадные">
+            <label for="box1">шоколадные</label>
 
-          <input type="checkbox" id="box2" value="сахарные присыпки">
-          <label for="box2">сахарные присыпки</label>
+            <input id="box2" type="checkbox" value="сахарные присыпки">
+            <label for="box2">сахарные присыпки</label>
 
-          <input type="checkbox" id="box3" value="фрукты">
-          <label for="box3">фрукты</label>
+            <input id="box3" type="checkbox" value="фрукты">
+            <label for="box3">фрукты</label>
 
-          <input type="checkbox" id="box4" value="сиропы">
-          <label for="box4">сиропы</label>
+            <input id="box4" type="checkbox" value="сиропы">
+            <label for="box4">сиропы</label>
 
-          <input type="checkbox" id="box5" value="джемы">
-          <label for="box5">джемы</label>
-        </div>
-
+            <input id="box5" type="checkbox" value="джемы">
+            <label for="box5">джемы</label>
+          </div>
+        </fieldset>
         <button class="sort" type="button">Применить</button>
       </form>
+
     </section>
     <section class="catalog">
       <article class="catalog-item item-current">
         <div class="item-picture">
-          <img src="/img/product-1.jpg" width="220" height="165" alt="с апельсиновым джемом и цитрусовой стружкой">
+          <img alt="с апельсиновым джемом и цитрусовой стружкой" height="165" src="./img/product-1.jpg" width="220">
         </div>
         <p class="catalog-item-price">
           310 &#x20bd;<span class="catalog-item-weight">/кг</span>
@@ -101,7 +104,7 @@
 
       <article class="catalog-item">
         <div class="item-picture">
-          <img src="/img/product-2.jpg" width="220" height="165" alt="кофейное с кусочками шоколада">
+          <img alt="кофейное с кусочками шоколада" height="165" src="./img/product-2.jpg" width="220">
         </div>
         <p class="catalog-item-price">
           380 &#x20bd;<span class="catalog-item-weight">/кг</span>
@@ -116,7 +119,7 @@
 
       <article class="catalog-item">
         <div class="item-picture">
-          <img src="/img/product-3.jpg" width="220" height="165" alt="клубничное с присыпкой из белого шоколада">
+          <img alt="клубничное с присыпкой из белого шоколада" height="165" src="./img/product-3.jpg" width="220">
         </div>
         <p class="catalog-item-price">
           355 &#x20bd;<span class="catalog-item-weight">/кг</span>
@@ -131,7 +134,7 @@
 
       <article class="catalog-item">
         <div class="item-picture">
-          <img src="/img/product-4.jpg" width="220" height="165" alt="крем-брюле с карамельной подливкой">
+          <img alt="крем-брюле с карамельной подливкой" height="165" src="./img/product-4.jpg" width="220">
         </div>
         <p class="catalog-item-price">
           415 &#x20bd;<span class="catalog-item-weight">/кг</span>
@@ -146,7 +149,7 @@
 
       <article class="catalog-item">
         <div class="item-picture">
-          <img src="/img/product-5.jpg" width="220" height="165" alt="с брусничным джемом">
+          <img alt="с брусничным джемом" height="165" src="./img/product-5.jpg" width="220">
         </div>
         <p class="catalog-item-price">
           325 &#x20bd;<span class="catalog-item-weight">/кг</span>
@@ -161,7 +164,7 @@
 
       <article class="catalog-item">
         <div class="item-picture">
-          <img src="/img/product-6.jpg" width="220" height="165" alt="с цельными ягодами черники">
+          <img alt="с цельными ягодами черники" height="165" src="./img/product-6.jpg" width="220">
         </div>
         <p class="catalog-item-price">
           410 &#x20bd;<span class="catalog-item-weight">/кг</span>
@@ -176,7 +179,7 @@
 
       <article class="catalog-item">
         <div class="item-picture">
-          <img src="/img/product-7.jpg" width="220" height="165" alt="с карамельной присыпкой">
+          <img alt="с карамельной присыпкой" height="165" src="./img/product-7.jpg" width="220">
         </div>
         <p class="catalog-item-price">
           375 &#x20bd;<span class="catalog-item-weight">/кг</span>
@@ -191,7 +194,7 @@
 
       <article class="catalog-item">
         <div class="item-picture">
-          <img src="/img/product-8.jpg" width="220" height="165" alt="с шоколадной стружкой">
+          <img alt="с шоколадной стружкой" height="165" src="./img/product-8.jpg" width="220">
         </div>
         <p class="catalog-item-price">
           320 &#x20bd;<span class="catalog-item-weight">/кг</span>
@@ -206,7 +209,7 @@
 
       <article class="catalog-item">
         <div class="item-picture">
-          <img src="/img/product-9.jpg" width="220" height="165" alt="с кусочками шоколада">
+          <img alt="с кусочками шоколада" height="165" src="./img/product-9.jpg" width="220">
         </div>
         <p class="catalog-item-price">
           440 &#x20bd;<span class="catalog-item-weight">/кг</span>
@@ -221,7 +224,7 @@
 
       <article class="catalog-item">
         <div class="item-picture">
-          <img src="/img/product-10.jpg" width="220" height="165" alt="с ментоловым сиропом">
+          <img alt="с ментоловым сиропом" height="165" src="./img/product-10.jpg" width="220">
         </div>
         <p class="catalog-item-price">
           435 &#x20bd;<span class="catalog-item-weight">/кг</span>
@@ -236,7 +239,7 @@
 
       <article class="catalog-item">
         <div class="item-picture">
-          <img src="/img/product-11.jpg" width="220" height="165" alt="с кусочками черного шоколада">
+          <img alt="с кусочками черного шоколада" height="165" src="./img/product-11.jpg" width="220">
         </div>
         <p class="catalog-item-price">
           355 &#x20bd;<span class="catalog-item-weight">/кг</span>
@@ -251,7 +254,7 @@
 
       <article class="catalog-item">
         <div class="item-picture">
-          <img src="/img/product-12.jpg" width="220" height="165" alt="с мятным сиропом">
+          <img alt="с мятным сиропом" height="165" src="./img/product-12.jpg" width="220">
         </div>
         <p class="catalog-item-price">
           420 &#x20bd;<span class="catalog-item-weight">/кг</span>
@@ -280,7 +283,7 @@
       <li><a href="#">Экологические стандарты</a></li>
     </ul>
     <div class="footer-logo">
-      <img src="/img/footer-logo.svg" alt="html academy">
+      <img alt="html academy" src="./img/footer-logo.svg">
       <span>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &#169; 2019</span>
     </div>
   </footer>

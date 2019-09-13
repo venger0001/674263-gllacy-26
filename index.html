@@ -7,16 +7,17 @@
   <body>
     <header class="header">
       <nav class="main-navigation">
-        <img src="/img/logo.svg" width="100" height="40" alt="Логотоп «GllacyShop»">
+        <img alt="Логотоп «GllacyShop»" height="40" src="./img/logo.svg" width="100">
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a></li>
-          <select name="catalog" size="5">
-            <option class="current" value="" label="Новинки"></option>
-            <option value="" label="Сливочное"></option>
-            <option value="" label="Щербеты"></option>
-            <option value="" label="Фруктовый лед"></option>
-            <option value="" label="Мелорин"></option>
-          </select>
+          <li><a href="catalog.html">Каталог</a>
+            <ul class="site-navigation-inner">
+              <li><a class="current" href="catalog.html">Новинки</a></li>
+              <li><a href="catalog.html">Сливочное</a></li>
+              <li><a href="catalog.html">Щербеты</a></li>
+              <li><a href="catalog.html">Фруктовый лед</a></li>
+              <li><a href="catalog.html">Мелорин</a></li>
+            </ul>
+          </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
@@ -27,7 +28,7 @@
             <a class="popup-search" href="#"></a>
             <form class="form-search" action="#">
               <input type="text" placeholder="Крем брюле">
-              <button type="button"></button>
+              <button type="submit"></button>
             </form>
           </li>
 
@@ -50,7 +51,7 @@
       </nav>
       <div class="contacts">
         <span class="working hours">С 10 до 20, ежедневно</span>
-        <a href="tel:+78124502525">8 812 450-25-25</a>
+        <a href="tel:+78124502525"><strong>8 812 450-25-25</strong></a>
       </div>
     </header>
     <main>
@@ -62,9 +63,9 @@
          </div>
          <h1>Крем-брюле и пломбир с малиновым джемом</h1>
          <div class="slider-dots">
-           <span class="slider-dots_item" onclick=""></span>
-           <span class="slider-dots_item" onclick=""></span>
-           <span class="slider-dots_item" onclick=""></span>
+           <span class="slider-dots_item dots_current"></span>
+           <span class="slider-dots_item"></span>
+           <span class="slider-dots_item"></span>
          </div>
          <a class="slider-btn" href="#">Давайте оба</a>
        </div>
@@ -92,7 +93,7 @@
             <img src="/img/label" alt="Хит">
           </div>
           <div class="item-picture">
-            <img src="/img/product-1.jpg" width="220" height="165" alt="с апельсиновым джемом и цитрусовой стружкой">
+            <img alt="с апельсиновым джемом и цитрусовой стружкой" height="165" src="./img/product-1.jpg" width="220">
           </div>
           <p class="catalog-item-price">
             310 &#x20bd;<span class="catalog-item-weight">/кг</span>
@@ -108,10 +109,10 @@
 
         <article class="catalog-item">
           <div class="item-label">
-            <img src="/img/label" alt="Хит">
+            <img alt="Хит" src="./img/label">
           </div>
           <div class="item-picture">
-            <img src="/img/product-2.jpg" width="220" height="165" alt="кофейное с кусочками шоколада">
+            <img alt="кофейное с кусочками шоколада" height="165" src="./img/product-2.jpg" width="220">
           </div>
           <p class="catalog-item-price">
             380 &#x20bd;<span class="catalog-item-weight">/кг</span>
@@ -126,10 +127,10 @@
 
         <article class="catalog-item">
           <div class="item-label">
-            <img src="/img/label" alt="Хит">
+            <img alt="Хит" src="./img/label">
           </div>
           <div class="item-picture">
-            <img src="/img/product-3.jpg" width="220" height="165" alt="клубничное с присыпкой из белого шоколада">
+            <img alt="клубничное с присыпкой из белого шоколада" height="165" src="./img/product-3.jpg" width="220">
           </div>
           <p class="catalog-item-price">
             355 &#x20bd;<span class="catalog-item-weight">/кг</span>
@@ -144,10 +145,10 @@
 
         <article class="catalog-item">
           <div class="item-label">
-            <img src="/img/label" alt="Хит">
+            <img alt="Хит" src="./img/label">
           </div>
           <div class="item-picture">
-            <img src="/img/product-4.jpg" width="220" height="165" alt="крем-брюле с карамельной подливкой">
+            <img alt="крем-брюле с карамельной подливкой" height="165" src="./img/product-4.jpg" width="220">
           </div>
           <p class="catalog-item-price">
             415 &#x20bd;<span class="catalog-item-weight">/кг</span>
@@ -215,20 +216,19 @@
 
       <section class="map">
         <div class="maping">
-          <img src="/img/map.jpg" alt="Карта">
+          <img alt="Карта" src="./img/map.jpg">
         </div>
-        <img src="/img/marker.svg" alt="мы тут" class="map-marker">
         <div class="feedback">
           <p class="address">
-            Адрес главного офиса <br>
-            и офлайн-магазина:<br>
+            Адрес главного офиса 
+            и офлайн-магазина:
             <span>
-              ул. Большая Конюшенная 19/8,<br>
+              ул. Большая Конюшенная 19/8,
               Санкт-Петербург
             </span>
           </p>
           <span>Для заказов по телефону:</span>
-          <a href="tel:+78124502525">8 812 450-25-25</a>
+          <a href="tel:+78124502525"><strong>8 812 450-25-25</strong></a>
           <span>(с 10 до 20 ежедневно)</span>
           <a class="feedback-btn" href="#">Форма обратной связи</a>
         </div>
@@ -250,18 +250,21 @@
       </ul>
 
       <div class="footer-logo">
-        <img src="/img/footer-logo.svg" alt="html academy">
+        <img alt="html academy" src="./img/footer-logo.svg">
         <span>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &#169; 2019</span>
       </div>
     </footer>
 
-    <form class="popup-communication">
-      <span>Мы обязательно Вам ответим!</span>
-      <a class="close" href="">X</a>
-      <input type="text" placeholder="Имя Фамилия">
-      <input type="email" placeholder="email@example.com">
-      <input type="text" placeholder="В свободной форме">
-      <button type="button">Отправить</button>
-    </form>
+    <div class="popup-communication">
+      <form class="popup-communication-form">
+        <span>Мы обязательно Вам ответим!</span>
+        <a class="close" href="">X</a>
+        <input name="" placeholder="Имя Фамилия" type="text">
+        <input placeholder="email@example.com" type="email">
+        <input placeholder="В свободной форме" type="text">
+        <button type="button">Отправить</button>
+      </form>
+    </div>
+
   </body>
 </html>
